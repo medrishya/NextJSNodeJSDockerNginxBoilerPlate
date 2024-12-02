@@ -13,7 +13,6 @@ const TableEditor = ({ data }) => {
   const [showTableInput, setshowTableInput] = useState(false);
   const handleKeyTableDown = (e) => {
     if (e.key === "Enter") {
-      console.log("Enter key was pressed!");
       // You can perform any action when Enter is pressed here
       const findIndex = nodes.findIndex(
         (obj) => obj?.data?.label == data?.label

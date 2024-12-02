@@ -19,7 +19,6 @@ const ColumnEditor = ({ index, data, entry }) => {
   const [showInput, setShowInput] = useState(undefined);
   const handleKeyTitleDown = (e) => {
     if (e.key === "Enter") {
-      console.log("Enter key was pressed!");
       // You can perform any action when Enter is pressed here
       const findIndex = nodes.findIndex((obj) => obj.data.label == data?.label);
       // DELTE THE ITEM NOW
@@ -41,7 +40,6 @@ const ColumnEditor = ({ index, data, entry }) => {
   const [showTypeInput, setshowTypeInput] = useState(undefined);
   const handleKeyTypeDown = (e) => {
     if (e.key === "Enter") {
-      console.log("Enter key was pressed!");
       // You can perform any action when Enter is pressed here
       const findIndex = nodes.findIndex((obj) => obj.data.label == data?.label);
       // DELTE THE ITEM NOW

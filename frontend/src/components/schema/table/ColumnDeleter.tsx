@@ -10,7 +10,6 @@ const ColumnDeleter = ({ index, data }) => {
   // DELETION ACTION
   const deleteColumn = (index) => {
     const findIndex = nodes.findIndex((obj) => obj.data.label == data?.label);
-    console.log(nodes, " tok tok ", data, findIndex);
     // DELTE THE ITEM NOW
     nodes[findIndex].data.schema.splice(index, 1);
     setDbSchemaState({

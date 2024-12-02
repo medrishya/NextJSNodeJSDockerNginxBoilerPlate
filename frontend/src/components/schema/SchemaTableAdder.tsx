@@ -6,7 +6,12 @@ const SchemaTableAdder = ({ setNodes }) => {
       ...nds,
       {
         id: `${nds.length + 1}`,
-        position: { x: nds[nds.length - 1].position.x + 130, y: 100 },
+        position: {
+          x: nds[nds.length - 1]?.position?.x
+            ? nds[nds.length - 1]?.position?.x + 130
+            : 1 + 130,
+          y: 100,
+        },
         type: "databaseSchema",
         data: {
           label: "New Table",
